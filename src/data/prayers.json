@@ -1,0 +1,274 @@
+{
+  "orthodox_prayers": [
+    {
+      "id": 1,
+      "title": "The Lord's Prayer",
+      "text": "Our Father, Who art in heaven, hallowed be Thy name. Thy kingdom come, Thy will be done, on earth as it is in heaven. Give us this day our daily bread, and forgive us our trespasses as we forgive those who trespass against us. And lead us not into temptation, but deliver us from evil. For Thine is the kingdom, and the power, and the glory, forever and ever. Amen.",
+      "category": "Essential Prayers"
+    },
+    {
+      "id": 2,
+      "title": "The Jesus Prayer",
+      "text": "Lord Jesus Christ, Son of God, have mercy on me, a sinner.",
+      "category": "Essential Prayers"
+    },
+    {
+      "id": 3,
+      "title": "Prayer to the Holy Spirit",
+      "text": "O Heavenly King, the Comforter, the Spirit of Truth, Who art everywhere and fillest all things, Treasury of Blessings and Giver of Life: Come and abide in us, and cleanse us of all impurity, and save our souls, O Good One.",
+      "category": "Essential Prayers"
+    },
+    {
+      "id": 4,
+      "title": "Trisagion Prayers",
+      "text": "Holy God, Holy Mighty, Holy Immortal, have mercy on us. (3 times)",
+      "category": "Essential Prayers"
+    },
+    {
+      "id": 5,
+      "title": "Prayer to the Theotokos",
+      "text": "O Most Holy Theotokos, save us! More honorable than the Cherubim, and more glorious beyond compare than the Seraphim, without corruption thou gavest birth to God the Word: true Theotokos, we magnify thee.",
+      "category": "Marian Prayers"
+    },
+    {
+      "id": 6,
+      "title": "Morning Prayer",
+      "text": "Arising from sleep, we fall down before Thee, O Good One, and sing to Thee, O Mighty One, the angelic hymn: Holy, Holy, Holy art Thou, O God; through the Theotokos, have mercy on us.",
+      "category": "Daily Prayers"
+    },
+    {
+      "id": 7,
+      "title": "Evening Prayer",
+      "text": "O Lord, keep us this evening without sin. Blessed art Thou, O Lord, the God of our fathers, and praised and glorified is Thy name unto the ages. Amen.",
+      "category": "Daily Prayers"
+    },
+    {
+      "id": 8,
+      "title": "Prayer Before Meals",
+      "text": "O Christ God, bless the food and drink of Thy servants, for holy art Thou, always, now and ever, and unto ages of ages. Amen.",
+      "category": "Daily Prayers"
+    },
+    {
+      "id": 9,
+      "title": "Prayer After Meals",
+      "text": "We thank Thee, O Christ our God, that Thou hast satisfied us with Thine earthly gifts; deprive us not of Thy Heavenly Kingdom, but as Thou camest among Thy disciples, O Savior, and gavest them peace, come to us and save us.",
+      "category": "Daily Prayers"
+    },
+    {
+      "id": 10,
+      "title": "Prayer for the Dead",
+      "text": "With the Saints give rest, O Christ, to the souls of Thy servants, where there is neither sickness, nor sorrow, nor sighing, but life everlasting.",
+      "category": "Memorial Prayers"
+    },
+    {
+      "id": 11,
+      "title": "Prayer of St. Ephraim",
+      "text": "O Lord and Master of my life, take from me the spirit of sloth, despair, lust of power, and idle talk. But give rather the spirit of chastity, humility, patience, and love to Thy servant. Yea, O Lord and King, grant me to see my own transgressions, and not to judge my brother, for blessed art Thou, unto ages of ages. Amen.",
+      "category": "Lenten Prayers"
+    },
+    {
+      "id": 12,
+      "title": "Prayer Before Study",
+      "text": "Most blessed Lord, send the grace of Thy Holy Spirit on me to strengthen me that I may learn well the subject I am about to study and by it become a better person for Thy glory, the comfort of my family, and the benefit of Thy Church and our Nation.",
+      "category": "Occasional Prayers"
+    },
+    {
+      "id": 13,
+      "title": "Prayer Before Travel",
+      "text": "O Lord Jesus Christ our God, the true and living Way, be Thou, O Master, my companion, guide and guardian during my journey; deliver and protect me from all danger, misfortune and temptation.",
+      "category": "Occasional Prayers"
+    },
+    {
+      "id": 14,
+      "title": "Prayer for the Sick",
+      "text": "O Holy Father, heavenly Physician of our souls and bodies, who sent Thine Only-begotten Son our Lord Jesus Christ to heal all our ailments and deliver us from death: visit and heal Thy servant (name), granting him/her release from pain and restoration to health and vigor.",
+      "category": "Intercessory Prayers"
+    },
+    {
+      "id": 15,
+      "title": "Prayer of St. John Chrysostom",
+      "text": "Lord Jesus Christ my God, loose, remit, forgive my sins, whether in knowledge or in ignorance, whether in word or in deed, whether in thought or in feeling, whether by day or by night; forgive me everything, for Thou art good and lovest mankind.",
+      "category": "Prayers of the Saints"
+    },
+    {
+      "id": 16,
+      "title": "Prayer to Guardian Angel",
+      "text": "O Holy Angel, standing by my wretched soul and my passionate life, forsake not me a sinner, nor depart from me because of my intemperance. Give no place to the evil demon to subdue me through the oppression of this mortal body.",
+      "category": "Daily Prayers"
+    },
+    {
+      "id": 17,
+      "title": "Prayer Before Confession",
+      "text": "O Lord God of my salvation, the Savior and Benefactor of my soul, I am truly sorry for my every transgression and I firmly resolve to amend my life from this day. Receive my confession and accept these tears of contrition.",
+      "category": "Sacramental Prayers"
+    },
+    {
+      "id": 18,
+      "title": "Prayer Before Communion",
+      "text": "I believe, O Lord, and I confess that Thou art truly the Christ, the Son of the Living God, who camest into the world to save sinners, of whom I am first.",
+      "category": "Sacramental Prayers"
+    },
+    {
+      "id": 19,
+      "title": "Prayer After Communion",
+      "text": "I thank Thee, O Lord my God, that Thou hast not rejected me, a sinner, but hast granted me to be a communicant of Thy holy mysteries.",
+      "category": "Sacramental Prayers"
+    },
+    {
+      "id": 20,
+      "title": "Prayer for Peace",
+      "text": "O God of peace, lover of concord, who hast commanded us to love our enemies and to do good to them that hate us: grant peace and love to all the world.",
+      "category": "Intercessory Prayers"
+    },
+    {
+      "id": 21,
+      "title": "Prayer of Protection",
+      "text": "Under Thy mercy we take refuge, O Theotokos. Do not reject our supplications in our necessity, but deliver us from danger, O only pure and blessed one.",
+      "category": "Marian Prayers"
+    },
+    {
+      "id": 22,
+      "title": "Prayer for the Church",
+      "text": "Remember, O Lord, Thy Holy, Catholic, and Apostolic Church; confirm and strengthen it, increase it and keep it in peace, and preserve it unconquerable forever.",
+      "category": "Intercessory Prayers"
+    },
+    {
+      "id": 23,
+      "title": "Prayer for Enemies",
+      "text": "Lord Jesus Christ, who didst command us to love our enemies, and those who defame and injure us, and to pray for them and forgive them; Who Thyself didst pray for Thine enemies, who crucified thee: grant us, we pray, the spirit of Christian reconciliation and meekness.",
+      "category": "Intercessory Prayers"
+    },
+    {
+      "id": 24,
+      "title": "Prayer of St. Basil the Great",
+      "text": "O God and Lord of the Powers, and Maker of all creation, who through the tender-hearted compassion of Thine incomparable mercy didst send Thine Only-Begotten Son, our Lord Jesus Christ, for the salvation of our race.",
+      "category": "Prayers of the Saints"
+    },
+    {
+      "id": 25,
+      "title": "Prayer for the Living",
+      "text": "Remember, O Lord, all those who have asked us, the unworthy, to pray for them. Remember all our brethren on earth and on the sea, in the air, in every place of Thy dominion who are in need of Thy loving-kindness and help.",
+      "category": "Intercessory Prayers"
+    },
+    {
+      "id": 26,
+      "title": "Prayer of St. Gregory Palamas",
+      "text": "O Lord, enlighten my darkness. O Lord, illumine me with the light of Thy countenance. Let Thy mercy, O Lord, be upon me. O Lord, teach me Thy statutes.",
+      "category": "Prayers of the Saints"
+    },
+    {
+      "id": 27,
+      "title": "Prayer for the Home",
+      "text": "Visit, O Lord, this home and drive far from it all snares of the enemy. Let Thy holy angels dwell herein to preserve us in peace, and let Thy blessing be upon us forever.",
+      "category": "Occasional Prayers"
+    },
+    {
+      "id": 28,
+      "title": "Prayer for Work",
+      "text": "O Lord Jesus Christ, who art the only-begotten Son of the eternal Father, Thou hast said with Thy most holy lips: Without Me you can do nothing. O Lord, I embrace in faith Thy words with my heart and soul.",
+      "category": "Daily Prayers"
+    },
+    {
+      "id": 29,
+      "title": "Prayer for Children",
+      "text": "O Heavenly Father, who loves children, bless our children with Thy presence. Fill them with Thy light, surround them with Thy glory, and preserve them by Thy grace.",
+      "category": "Intercessory Prayers"
+    },
+    {
+      "id": 30,
+      "title": "Prayer for Marriage",
+      "text": "O Lord Jesus Christ, by Thy presence at the wedding in Cana of Galilee, Thou didst show that marriage is blessed. We beseech Thee, grant that our marriage may be holy and filled with Thy presence.",
+      "category": "Occasional Prayers"
+    },
+    {
+      "id": 31,
+      "title": "Prayer of St. Nicholas",
+      "text": "O Holy Father Nicholas, the fruit of thy good deeds hath enlightened and delighted the hearts of the faithful. Who can tell of thy mighty deeds and numberless miracles?",
+      "category": "Prayers of the Saints"
+    },
+    {
+      "id": 32,
+      "title": "Prayer for Patience",
+      "text": "O Lord, grant me to greet the coming day in peace. Help me in all things to rely upon Thy holy will. In every hour of the day reveal Thy will to me.",
+      "category": "Daily Prayers"
+    },
+    {
+      "id": 33,
+      "title": "Prayer for Humility",
+      "text": "O Lord and Master of my life, take from me the spirit of pride, vainglory and conceit, and grant unto me, Thy servant, the spirit of humility.",
+      "category": "Spiritual Growth"
+    },
+    {
+      "id": 34,
+      "title": "Prayer for the Departed",
+      "text": "Remember, O Lord, the souls of Thy departed servants, and all Orthodox Christians who have fallen asleep in the hope of resurrection unto life eternal.",
+      "category": "Memorial Prayers"
+    },
+    {
+      "id": 35,
+      "title": "Prayer Before Icons",
+      "text": "We reverence Thy spotless icon, O gracious Lord, and ask forgiveness of our transgressions, O Christ our God.",
+      "category": "Daily Prayers"
+    },
+    {
+      "id": 36,
+      "title": "Prayer for Wisdom",
+      "text": "O All-wise Lord, grant me wisdom to recognize what I should do, courage to undertake it, and strength to accomplish it.",
+      "category": "Spiritual Growth"
+    },
+    {
+      "id": 37,
+      "title": "Prayer for Protection at Night",
+      "text": "Into Thy hands, O Lord, I commend my spirit. Protect me under the shadow of Thy wings, preserve me from all evil, and save me by Thy grace.",
+      "category": "Daily Prayers"
+    },
+    {
+      "id": 38,
+      "title": "Prayer of St. John of Damascus",
+      "text": "O Master, Lord Jesus Christ our God, who alone hast power to forgive sins: forgive all the sins that I have committed in knowledge or in ignorance.",
+      "category": "Prayers of the Saints"
+    },
+    {
+      "id": 39,
+      "title": "Prayer for Family Unity",
+      "text": "O Lord, bind us together with ties of love, unity and peace. Grant that we may be of one heart and one soul, as Thou art one with the Father.",
+      "category": "Intercessory Prayers"
+    },
+    {
+      "id": 40,
+      "title": "Prayer for Priests",
+      "text": "Remember, O Lord, all Orthodox bishops and priests, especially those who rightly teach the word of Thy truth. Strengthen them in their holy ministry.",
+      "category": "Intercessory Prayers"
+    },
+    {
+      "id": 41,
+      "title": "Prayer for Love",
+      "text": "O God of love, teach me to love my neighbors as myself, to forgive as I have been forgiven, and to show mercy as I have received mercy.",
+      "category": "Spiritual Growth"
+    },
+    {
+      "id": 42,
+      "title": "Prayer Before Reading Scripture",
+      "text": "Illumine our hearts, O Master who lovest mankind, with the pure light of Thy divine knowledge, and open the eyes of our mind to understand the teachings of Thy Gospel.",
+      "category": "Daily Prayers"
+    },
+    {
+      "id": 43,
+      "title": "Prayer for the Nation",
+      "text": "O Lord, save our nation and bless our land. Grant peace, prosperity and godliness to all our people, and preserve us from all harm and danger.",
+      "category": "Intercessory Prayers"
+    },
+    {
+      "id": 44,
+      "title": "Prayer of St. Symeon",
+      "text": "Lord, now lettest Thou Thy servant depart in peace, according to Thy word; for mine eyes have seen Thy salvation.",
+      "category": "Prayers of the Saints"
+    },
+    {
+      "id": 45,
+      "title": "Prayer for Strength",
+      "text": "O Lord, grant me strength to bear the burdens of this day with patience. Help me to overcome all difficulties through Thy grace.",
+      "category": "Daily Prayers"
+    }
+  ]
+}
