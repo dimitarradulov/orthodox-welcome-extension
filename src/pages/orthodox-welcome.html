@@ -15,12 +15,18 @@
   </head>
   <body>
     <main class="extension">
-      <time class="clock" data-selector="clock"></time>
+      <time class="clock select-none" data-selector="clock"></time>
+
       <article class="verse hidden" data-selector="verse-container">
-        <h3 class="verse__title">Verse of the Day ☦</h3>
-        <p class="verse__text" data-selector="verse-text"></p>
+        <h3 class="title">Verse of the Day ☦</h3>
+        <p class="text-size-1 verse__text" data-selector="verse-text"></p>
         <p class="verse__ref" data-selector="verse-ref"></p>
       </article>
+
+      <details class="prayer hidden" data-selector="prayer-container">
+        <summary class="title select-none">Prayer ☦</summary>
+        <p class="text-size-1" data-selector="prayer-text"></p>
+      </details>
     </main>
   </body>
 </html>

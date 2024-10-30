@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Orthodox Welcome",
   "description": "Orthodox Welcome replaces your new tab with an inspiring Orthodox-themed page.",
-  "version": "1",
+  "version": "1.0.1",
   "icons": {
     "16": "./images/icons/icon16.png",
     "32": "./images/icons/icon32.png",

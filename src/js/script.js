@@ -8,6 +8,10 @@ const verseContainerEl = document.querySelector(
 );
 const verseTextEl = document.querySelector("[data-selector='verse-text']");
 const verseRefEl = document.querySelector("[data-selector='verse-ref']");
+const prayerContainerEl = document.querySelector(
+  "[data-selector='prayer-container']"
+);
+const prayerTextEl = document.querySelector("[data-selector='prayer-text']");
 
 const setBackgroundImage = (imageUrl) => {
   document.body.style.background = `url(${imageUrl}) no-repeat center center fixed`;
@@ -39,13 +43,23 @@ const activateClock = () => {
   updateClock();
 };
 
-const addVerse = (data) => {
-  if (verseContainerEl.classList.contains("hidden")) {
-    verseContainerEl.classList.remove("hidden");
+const removeHiddenClass = (element) => {
+  if (element.classList.contains("hidden")) {
+    element.classList.remove("hidden");
   }
+};
+
+const addVerse = (data) => {
+  removeHiddenClass(verseContainerEl);
 
   verseTextEl.innerText = `${data.text}`;
   verseRefEl.innerText = `- ${data.ref}`;
+};
+
+const addPrayer = (data) => {
+  removeHiddenClass(prayerContainerEl);
+
+  prayerTextEl.innerText = `${data.text}`;
 };
 
 getStorageData("imageUrl")
@@ -63,8 +77,14 @@ getStorageData("verse")
   .then(({ verse }) => addVerse(verse))
   .catch((error) => {
     console.error(error);
-    fetch("../data/fallback-verse.json")
+    fetch(
+      "https://orthodoxwelcome.s3.eu-north-1.amazonaws.com/data/fallback-verses.json"
+    )
       .then((response) => response.json())
       .then((data) => addVerse(data))
       .catch(console.error);
   });
+
+getStorageData("prayer")
+  .then(({ prayer }) => addPrayer(prayer))
+  .catch(console.error);
