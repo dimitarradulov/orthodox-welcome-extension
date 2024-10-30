@@ -39,23 +39,32 @@ const activateClock = () => {
   updateClock();
 };
 
+const addVerse = (data) => {
+  if (verseContainerEl.classList.contains("hidden")) {
+    verseContainerEl.classList.remove("hidden");
+  }
+
+  verseTextEl.innerText = `${data.text}`;
+  verseRefEl.innerText = `- ${data.ref}`;
+};
+
 getStorageData("imageUrl")
   .then(({ imageUrl }) => {
-    if (imageUrl) {
-      setBackgroundImage(imageUrl);
-    }
+    setBackgroundImage(imageUrl ?? "../images/fallback-background.jpg");
     createOverlay();
     activateClock();
   })
-  .catch(console.error);
+  .catch((error) => {
+    console.error(error);
+    setBackgroundImage("../images/fallback-background.jpg");
+  });
 
 getStorageData("verse")
-  .then(({ verse }) => {
-    if (verseContainerEl.classList.contains("hidden")) {
-      verseContainerEl.classList.remove("hidden");
-    }
-
-    verseTextEl.innerText = `${verse.text}`;
-    verseRefEl.innerText = `- ${verse.ref}`;
-  })
-  .catch(console.error);
+  .then(({ verse }) => addVerse(verse))
+  .catch((error) => {
+    console.error(error);
+    fetch("../data/fallback-verse.json")
+      .then((response) => response.json())
+      .then((data) => addVerse(data))
+      .catch(console.error);
+  });
