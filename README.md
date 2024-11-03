@@ -7,3 +7,7 @@ Orthodox Welcome is a Chrome extension built with React that replaces your new t
 - **Orthodox-themed Background**: Each new tab features a peaceful and reflective background image.
 - **Current Time Display**: Stay on schedule with the current time prominently displayed.
 - **Daily Bible Verse**: Receive an inspiring Bible verse with each new tab.
+
+## Screenshot
+
+![Orthodox Welcome Extension Screenshot](https://lh3.googleusercontent.com/R9OLwpnG1f3AHjx6R5UCb9m1--CXKl5pUG7kVyB-MkZEVSHJLRGoyUjVe3DV12FQzo6W-lNN0DwxVh7nQfIerrj2jw=s800-w800-h500)
