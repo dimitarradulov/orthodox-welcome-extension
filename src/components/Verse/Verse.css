@@ -1,0 +1,13 @@
+.verse {
+  margin-block-end: 8rem;
+
+  .verse__text {
+    margin-block-end: 1rem;
+  }
+
+  .verse__ref {
+    text-align: right;
+    font-size: 2rem;
+    font-style: italic;
+  }
+}
