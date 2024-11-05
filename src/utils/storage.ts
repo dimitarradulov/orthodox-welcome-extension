@@ -1,6 +1,8 @@
-import { getRandomElement } from "./functional";
+import { differenceWith, getRandomElement } from "./functional";
 import { getRandomImageUrl } from "./images";
 import { BIBLE_VERSES } from "../constants/verses";
+import { DEFAULT_VISIBLE_SECTIONS } from "../constants/sections";
+import { Section } from "../types/section";
 
 const setImageUrl = async () => {
   try {
@@ -44,6 +46,33 @@ const setPrayer = async () => {
   }
 };
 
+const setVisibleSections = async () => {
+  try {
+    const result = await chrome.storage.local.get("visibleSections");
+    const defaultVisibleSections: Section[] = [...DEFAULT_VISIBLE_SECTIONS];
+
+    let visibleSections = defaultVisibleSections;
+
+    if (
+      Array.isArray(result?.visibleSections) &&
+      result?.visibleSections?.length !== defaultVisibleSections.length
+    ) {
+      const diff = differenceWith(
+        defaultVisibleSections,
+        result.visibleSections,
+        (a, b) => a.id === b.id
+      );
+      visibleSections = [...result.visibleSections, ...diff];
+    }
+
+    await chrome.storage.local.set({
+      visibleSections,
+    });
+  } catch (error) {
+    throw error;
+  }
+};
+
 export const clearStorage = async () => {
   await chrome.storage.local.clear();
 };
@@ -52,7 +81,8 @@ export const populateStorageWithData = async () => {
   try {
     await setImageUrl();
     await setVerse();
-    await setPrayer();
+    await setVisibleSections();
+    // await setPrayer();
   } catch (error) {
     console.error(error);
   }

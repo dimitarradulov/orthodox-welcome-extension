@@ -1,4 +1,4 @@
-export const BIBLE_VERSES = [
+export const BIBLE_VERSES: ReadonlyArray<string> = [
   "Genesis+1:1",
   "Genesis+1:27",
   "Exodus+14:14",

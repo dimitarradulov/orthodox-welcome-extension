@@ -13,8 +13,10 @@
     "newtab": "index.html"
   },
   "background": {
-    "service_worker": "src/background.ts",
-    "type": "module"
+    "service_worker": "src/background.ts"
+  },
+  "action": {
+    "default_popup": "popup.html"
   },
   "permissions": ["storage", "alarms"]
 }

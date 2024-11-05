@@ -17,7 +17,16 @@ const useChromeStorage = <T>(name: string) => {
     fetchData();
   }, [name]);
 
-  return { data, error };
+  const setValue = async (value: T) => {
+    try {
+      await chrome.storage.local.set({ [name]: value });
+      setData(value);
+    } catch (err) {
+      setError(err as Error);
+    }
+  };
+
+  return { data, error, setValue };
 };
 
 export default useChromeStorage;
