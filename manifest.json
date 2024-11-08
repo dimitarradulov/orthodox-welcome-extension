@@ -18,5 +18,5 @@
   "action": {
     "default_popup": "popup.html"
   },
-  "permissions": ["storage", "alarms"]
+  "permissions": ["storage", "alarms", "tabs"]
 }

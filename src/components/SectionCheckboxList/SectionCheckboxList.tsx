@@ -1,9 +1,9 @@
 import React from "react";
 import CustomCheckbox from "../UI/CustomCheckbox/CustomCheckbox";
-import { Section } from "../../types/section";
+import { SectionData } from "../../types/section";
 
 type SectionCheckboxListProps = {
-  sections: Section[];
+  sections: SectionData[];
   handleCheckboxChange: (id: string, value: boolean) => void;
 };
 

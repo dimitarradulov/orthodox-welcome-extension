@@ -15,7 +15,7 @@ const useChromeStorage = <T>(name: string) => {
     };
 
     fetchData();
-  }, [name]);
+  }, []);
 
   const setValue = async (value: T) => {
     try {

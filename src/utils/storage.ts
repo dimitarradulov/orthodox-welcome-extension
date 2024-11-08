@@ -2,7 +2,7 @@ import { differenceWith, getRandomElement } from "./functional";
 import { getRandomImageUrl } from "./images";
 import { BIBLE_VERSES } from "../constants/verses";
 import { DEFAULT_VISIBLE_SECTIONS } from "../constants/sections";
-import { Section } from "../types/section";
+import { SectionData } from "../types/section";
 
 const setImageUrl = async () => {
   try {
@@ -49,7 +49,7 @@ const setPrayer = async () => {
 const setVisibleSections = async () => {
   try {
     const result = await chrome.storage.local.get("visibleSections");
-    const defaultVisibleSections: Section[] = [...DEFAULT_VISIBLE_SECTIONS];
+    const defaultVisibleSections: SectionData[] = [...DEFAULT_VISIBLE_SECTIONS];
 
     let visibleSections = defaultVisibleSections;
 

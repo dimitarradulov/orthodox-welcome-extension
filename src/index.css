@@ -24,7 +24,7 @@ body {
   font-family: "PT Serif", serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 3rem;
+  font-size: 1.6rem;
 
   color: #fff;
 }
@@ -96,4 +96,8 @@ h6 {
 
 .select-none {
   user-select: none;
+}
+
+.no-wrap {
+  white-space: nowrap;
 }
