@@ -18,5 +18,6 @@
   "action": {
     "default_popup": "popup.html"
   },
-  "permissions": ["storage", "alarms", "tabs"]
+  "permissions": ["storage", "alarms", "tabs"],
+  "host_permissions": ["https://orthocal.info/*"]
 }

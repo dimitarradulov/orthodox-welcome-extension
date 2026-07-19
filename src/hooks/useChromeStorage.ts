@@ -15,7 +15,21 @@ const useChromeStorage = <T>(name: string) => {
     };
 
     fetchData();
-  }, []);
+    const handleStorageChange = (
+      changes: { [key: string]: chrome.storage.StorageChange },
+      areaName: string
+    ) => {
+      if (areaName === "local" && changes[name]) {
+        setData(changes[name].newValue as T);
+      }
+    };
+
+    chrome.storage.onChanged.addListener(handleStorageChange);
+
+    return () => {
+      chrome.storage.onChanged.removeListener(handleStorageChange);
+    };
+  }, [name]);
 
   const setValue = async (value: T) => {
     try {

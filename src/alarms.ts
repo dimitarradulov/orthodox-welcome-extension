@@ -1,5 +1,5 @@
 import { getMidnight } from "./utils/dates";
-import { clearStorage, populateStorageWithData } from "./utils/storage";
+import { populateStorageWithData } from "./utils/storage";
 
 const PERIOD_IN_MINUTES = 1440; // 24 hours in minutes
 
@@ -15,7 +15,6 @@ const createMidnightAlarm = async () => {
 
 const onAlarm = async (alarm: chrome.alarms.Alarm) => {
   if (alarm.name === "midnightAlarm") {
-    await clearStorage();
     await populateStorageWithData();
   }
 };
