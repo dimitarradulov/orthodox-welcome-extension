@@ -1,8 +1,9 @@
-import { differenceWith, getRandomElement } from "./functional";
+import { getRandomElement } from "./functional";
 import { getRandomImageUrl } from "./images";
 import { BIBLE_VERSES } from "../constants/verses";
 import { DEFAULT_VISIBLE_SECTIONS } from "../constants/sections";
 import { SectionData } from "../types/section";
+import { fetchSaintsOfDay } from "./saints";
 
 const setImageUrl = async () => {
   try {
@@ -49,21 +50,22 @@ const setPrayer = async () => {
 const setVisibleSections = async () => {
   try {
     const result = await chrome.storage.local.get("visibleSections");
-    const defaultVisibleSections: SectionData[] = [...DEFAULT_VISIBLE_SECTIONS];
-
-    let visibleSections = defaultVisibleSections;
-
-    if (
-      Array.isArray(result?.visibleSections) &&
-      result?.visibleSections?.length !== defaultVisibleSections.length
-    ) {
-      const diff = differenceWith(
-        defaultVisibleSections,
-        result.visibleSections,
-        (a, b) => a.id === b.id
-      );
-      visibleSections = [...result.visibleSections, ...diff];
-    }
+    const existingSections = Array.isArray(result.visibleSections)
+      ? result.visibleSections
+      : [];
+    const existingById = new Map(
+      existingSections
+        .filter(
+          (section): section is SectionData =>
+            typeof section?.id === "string" &&
+            typeof section.visible === "boolean"
+        )
+        .map((section) => [section.id, section])
+    );
+    const visibleSections = DEFAULT_VISIBLE_SECTIONS.map((section) => ({
+      ...section,
+      visible: existingById.get(section.id)?.visible ?? section.visible,
+    }));
 
     await chrome.storage.local.set({
       visibleSections,
@@ -73,19 +75,25 @@ const setVisibleSections = async () => {
   }
 };
 
+const setSaints = async () => {
+  const saints = await fetchSaintsOfDay();
+  await chrome.storage.local.set({ saints });
+};
+
 export const clearStorage = async () => {
   await chrome.storage.local.clear();
 };
 
 export const populateStorageWithData = async () => {
-  try {
-    await setImageUrl();
-    await setVerse();
-    await setVisibleSections();
-    // await setPrayer();
-  } catch (error) {
-    console.error(error);
-  }
+  const tasks = [setImageUrl(), setVerse(), setVisibleSections(), setSaints()];
+  const results = await Promise.allSettled(tasks);
+
+  results.forEach((result) => {
+    if (result.status === "rejected") {
+      console.error(result.reason);
+    }
+  });
+  // await setPrayer();
 };
 
 export const getStorageData = async (name: string) => {

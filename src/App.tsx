@@ -4,12 +4,14 @@ import BackgroundOverlay from "./components/UI/BackgroundOverlay/BackgroundOverl
 import useBackgroundImage from "./hooks/useBackgroundImage";
 import useTime from "./hooks/useTime";
 import useVerseData from "./hooks/useVerseData";
+import useSaintsData from "./hooks/useSaintsData";
 import useSections from "./hooks/useSections";
 import Section from "./components/Section/Section";
 
 const App = () => {
   const { hour, minutes } = useTime();
   const { verseData } = useVerseData();
+  const { saintsData } = useSaintsData();
   const { sections, setSections } = useSections();
   const backgroundImageUrl = useBackgroundImage();
 
@@ -43,6 +45,7 @@ const App = () => {
           hour={hour}
           minutes={minutes}
           verseData={verseData}
+          saintsData={saintsData}
         />
       ))}
     </main>
